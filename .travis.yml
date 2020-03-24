@@ -1,0 +1,17 @@
+language: java
+dist: trusty
+
+script:
+- mvn clean install
+
+deploy:
+  provider: script
+  script: "mvn -s travis_settings.xml -DskipTests deploy"
+  on:
+    branch: master
+
+before_cache:
+  - "rm -f $HOME/.m2/repository/org/examples"
+cache:
+  directories:
+    - "$HOME/.m2/repository"
