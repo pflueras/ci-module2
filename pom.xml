@@ -15,6 +15,12 @@
 
     <dependencies>
         <dependency>
+            <groupId>org.examples</groupId>
+            <artifactId>ci-module1</artifactId>
+            <version>0.9.3-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.11</version>
@@ -58,8 +64,23 @@
             <id>bintray-pflueras-platform</id>
             <name>bintray-pflueras-platform</name>
             <url>https://dl.bintray.com/pflueras/pflueras-platform</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
             <snapshots>
                 <enabled>false</enabled>
+            </snapshots>
+        </repository>
+
+        <repository>
+            <id>oss-jfrog-snapshots</id>
+            <name>oss-jfrog-snapshots</name>
+            <url>https://oss.jfrog.org/artifactory/oss-snapshot-local</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
             </snapshots>
         </repository>
     </repositories>
