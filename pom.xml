@@ -3,7 +3,7 @@
 
     <groupId>org.examples</groupId>
     <artifactId>ci-module2</artifactId>
-    <version>0.9.3-SNAPSHOT</version>
+    <version>0.9.5-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>CI Module2</name>
 
@@ -17,7 +17,7 @@
         <dependency>
             <groupId>org.examples</groupId>
             <artifactId>ci-module1</artifactId>
-            <version>0.9.3-SNAPSHOT</version>
+            <version>0.9.5-SNAPSHOT</version>
         </dependency>
 
         <dependency>
