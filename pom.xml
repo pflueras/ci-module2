@@ -17,7 +17,7 @@
         <dependency>
             <groupId>org.examples</groupId>
             <artifactId>ci-module1</artifactId>
-            <version>0.9.15-SNAPSHOT</version>
+            <version>Failed</version>
         </dependency>
 
         <dependency>
