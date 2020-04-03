@@ -17,7 +17,7 @@
         <dependency>
             <groupId>org.examples</groupId>
             <artifactId>ci-module1</artifactId>
-            <version>Failed</version>
+            <version>0.9.17-SNAPSHOT</version>
         </dependency>
 
         <dependency>
@@ -81,12 +81,12 @@
 
     <distributionManagement>
         <repository>
-            <id>bintray-pflueras-platform</id>
+            <id>bintray-deploy</id>
             <name>bintray-pflueras-platform</name>
             <url>https://api.bintray.com/maven/pflueras/pflueras-platform/ci-module2/;publish=1</url>
         </repository>
         <snapshotRepository>
-            <id>oss-jfrog-snapshots</id>
+            <id>oss-jfrog-snapshot-deploy</id>
             <name>oss-jfrog-snapshots</name>
             <url>https://oss.jfrog.org/artifactory/oss-snapshot-local</url>
         </snapshotRepository>
