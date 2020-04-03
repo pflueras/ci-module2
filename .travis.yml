@@ -19,3 +19,9 @@ deploy:
   script: "mvn -DskipTests deploy"
   on:
     branch: master
+
+deploy:
+  provider: script
+  script: "mvn -DskipTests deploy"
+  on:
+    tags: true
