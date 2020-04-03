@@ -17,9 +17,11 @@ cache:
 deploy:
   - provider: script
     script: "mvn -DskipTests deploy"
+    skip_cleanup: true
     on:
       branch: master
   - provider: script
     script: "mvn -DskipTests deploy"
+    skip_cleanup: true
     on:
       tags: true
