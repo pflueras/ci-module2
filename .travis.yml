@@ -15,13 +15,11 @@ cache:
     - "$HOME/.m2/repository"
 
 deploy:
-  provider: script
-  script: "mvn -DskipTests deploy"
-  on:
-    branch: master
-
-deploy:
-  provider: script
-  script: "mvn -DskipTests deploy"
-  on:
-    tags: true
+  - provider: script
+    script: "mvn -DskipTests deploy"
+    on:
+      branch: master
+  - provider: script
+    script: "mvn -DskipTests deploy"
+    on:
+      tags: true
